@@ -1,0 +1,60 @@
+doctype html
+== "<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->"
+== "<!--[if lt IE 7 ]> <html class=\"ie6\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 7 ]>    <html class=\"ie7\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 8 ]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 9 ]>    <html class=\"ie9\" lang=\"en\"> <![endif]-->"
+== "<!--[if (gt IE 9)|!(IE)]><!--> <html lang=\"en\"> <!--<![endif]-->"
+
+head
+  meta charset="utf-8"
+
+  / Uncomment to make IE8 render like IE7
+  / meta http-equiv="X-UA-Compatible" content="IE=7"
+
+  / Set the viewport width to device width for mobile
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+  link rel="apple-touch-icon" href="/assets/apple-touch-icon-iphone.png"
+  link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-ipad.png"
+  link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-iphone4.png"
+  link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-touch-icon-ipad3.png"
+
+  title= content_for?(:title) ? yield(:title) : "Crowdkillers"
+
+  = stylesheet_link_tag "application"
+  = javascript_include_tag "vendor/custom.modernizr"
+  = javascript_include_tag :application
+  = yield(:js)
+  = csrf_meta_tag
+
+body
+  nav.top-bar.container
+    ul.title-area
+      li.name
+        h1
+          a href="/" = yield :title
+      li.toggle-topbar.menu-icon
+        a href="#"
+          span Menu
+    section.top-bar-section
+      ul.left
+        li.divider
+        li
+          a href="/"
+            .icon.flaticon.stroke.home
+            | Home
+        li.divider
+        li.has-dropdown
+          a href=""
+            .icon.flaticon.stroke.music
+              |  Music 
+          ul.dropdown
+            li
+              a href="/tracks" Tracks
+            li
+              a href="/sets" Sets 
+        li.divider    
+  .row
+    .large-12.columns
+      == yield
