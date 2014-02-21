@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Metrics::Application.load_tasks
+Crowdkillers::Application.load_tasks
