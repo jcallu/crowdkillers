@@ -25,7 +25,7 @@ $em-base: 16px !default;
 
 // $default-float: left;
 
-// $body-bg: #fff;
+$body-bg: #000;
 // $body-font-color: #222;
 $body-font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
 // $body-font-weight: normal;
@@ -310,7 +310,7 @@ $custom-color: #B1B1B1;
 
 // Button text styles.
 
-// $button-font-family: inherit;
+$button-font-family: inherit;
 // $button-font-color: #fff;
 // $button-font-color-alt: #333;
 // $button-font-med: emCalc(16px);
@@ -322,13 +322,13 @@ $custom-color: #B1B1B1;
 
 // Various hover effects.
 
-// $button-function-factor: 10%;
+//$button-function-factor: 10%;
 
 // Button border styles.
 
 // $button-border-width: 1px;
 // $button-border-style: solid;
-// $button-border-color: darken($primary-color, $button-function-factor);
+//$button-border-color: darken($custom-color, $button-function-factor);
 
 // Radius used throughout the core.
 

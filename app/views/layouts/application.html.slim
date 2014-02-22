@@ -19,6 +19,7 @@ head
   link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-ipad.png"
   link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-iphone4.png"
   link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-touch-icon-ipad3.png"
+  link rel="metro" sizes="144x144" href="/assets/metro.png"
 
   title= content_for?(:title) ? yield(:title) : "Crowdkillers"
 
@@ -48,13 +49,30 @@ body
         li.has-dropdown
           a href=""
             .icon.flaticon.stroke.music
-              |  Music 
+              |  Music
           ul.dropdown
             li
               a href="/tracks" Tracks
             li
-              a href="/sets" Sets 
-        li.divider    
+              a href="/sets" Sets
+            -if authenticated?
+              li
+                a href="/demos" Demos
+        li.divider
+    section.top-bar-section
+      ul.right
+        li.divider
+        li
+          a href="/sessions/new"
+            .icon.flaticon.stroke.login-1
+            | Log In
+    - if authenticated?
+      section.top-bar-section
+        ul.right
+          li
+            = link_to session_path(0), method: :delete do
+              .icon.flaticon.stroke.logout-2
+              | Sign Out
   .row
     .large-12.columns
       == yield
