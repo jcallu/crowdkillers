@@ -13,5 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require jquery-1.5.min
+//= require jquery.equalheights
+//= require_tree .
 
 $(function(){ $(document).foundation(); });

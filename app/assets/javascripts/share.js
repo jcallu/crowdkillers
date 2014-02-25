@@ -119,4 +119,4 @@ jQuery.noConflict();
 		if (window.focus) { newwin.focus() }
 	}
 
-})(jQuery)h
+})(jQuery);
