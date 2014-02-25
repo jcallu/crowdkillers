@@ -15,6 +15,7 @@
 //= require foundation
 //= require jquery-1.5.min
 //= require jquery.equalheights
+//= require mainmenu
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
