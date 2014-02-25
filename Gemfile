@@ -6,7 +6,6 @@ gem 'slim', '~> 1.3.8'
 gem 'rails', '3.2.13'
 gem 'zurb-foundation'
 gem 'soundcloud'
-gem 'rails_12factor'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
