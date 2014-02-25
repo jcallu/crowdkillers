@@ -1,0 +1,47 @@
+body
+  nav.top-bar.container
+    ul.title-area
+      li.name
+        h1
+          a href="/" = yield :title
+      li.toggle-topbar.menu-icon
+        a href="#"
+          span Menu
+    section.top-bar-section
+      ul.left
+        li.divider
+        li
+          a href="/"
+            .icon.flaticon.stroke.home
+            | Home
+        li.divider
+        li.has-dropdown
+          a href=""
+            .icon.flaticon.stroke.music
+              |  Music
+          ul.dropdown
+            li
+              a href="/tracks" Tracks
+            li
+              a href="/sets" Sets
+            -if authenticated?
+              li
+                a href="/demos" Demos
+        li.divider
+    section.top-bar-section
+      ul.right
+        li.divider
+        li
+          a href="/sessions/new"
+            .icon.flaticon.stroke.login-1
+            | Log In
+    - if authenticated?
+      section.top-bar-section
+        ul.right
+          li
+            = link_to session_path(0), method: :delete do
+              .icon.flaticon.stroke.logout-2
+              | Sign Out
+  .row
+    .large-12.columns
+      == yield

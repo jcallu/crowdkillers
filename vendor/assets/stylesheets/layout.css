@@ -1,0 +1,154 @@
+#container					{ width: 980px; margin: 0 auto; padding: 26px 0 0; position: relative; }
+#content-container			{ width: 930px; margin: 0 auto; }
+#content-inner				{ margin: 0 0 0 -24px; overflow: hidden; width: 100%; height: 300px}
+
+/* ~~~~~~~~~ HEADER AND NAVIGATION ~~~~~~~~~ */
+#header							{  position: relative; z-index: auto ;  }
+#header a						{ background-image: url(/assets/graphic-header-text.gif); height: 147px; display: block; text-indent: -999em; outline: none; width: 100%; }
+#header .logo					{ float: left; }
+#header .logo a					{ width: 139px; }
+
+#header ul						{ float: left; list-style: none; margin: 0;  }
+#header li						{ float: left; margin: 0; }
+
+#header .nav-home a				{ width: 130px; background-position: -139px 0; }
+#header .nav-tour a				{ width: 131px; background-position: -269px 0; }
+#header .nav-news a				{ width: 129px; background-position: -400px 0; }
+#header .nav-media a			{ width: 130px; background-position: -529px 0; }
+#header .nav-shop a				{ width: 131px; background-position: -659px 0; }
+#header .nav-contact a			{ width: 140px; background-position: -790px 0; }
+
+/* hover and current menu items */
+#header .nav-home a:hover, #header .nav-home.active a			{ width: 130px; background-position: -139px -147px; }
+#header .nav-tour a:hover, #header .nav-tour.active a			{ width: 131px; background-position: -269px -147px; }
+#header .nav-news a:hover, #header .nav-news.active a			{ width: 129px; background-position: -400px -147px; }
+#header .nav-media.active a { width: 130px; background-position: -529px -147px; }
+#header .nav-media a:hover, #header .nav-media a.hover { width: 130px; background-position: -529px bottom; }
+#header .nav-shop a:hover, #header .nav-shop.active a			{ width: 131px; background-position: -659px -147px; }
+#header .nav-contact a:hover, #header .nav-contact.active a	{ width: 140px; background-position: -790px -147px; }
+
+#header	.subnav					{ background: url(/assets/footer.png) no-repeat bottom left; padding: 0 0 65px; position: absolute; width: 129px; left: -999em; z-index: 1999; top: 128px; }
+#header ul ul						{ float: none; width: 128px;; background: #515151;  padding: 0; margin: 0 0 0 1px; }
+#header li:hover div					{ left: auto; }
+#header ul ul li					{ float: none; width: 100%; }
+#header .nav-media ul li:first-child a, .header-nav-media-ul-li-first-child-a { border-top: 1px solid #323232; }
+#header .nav-media ul li a			{ width: 128px; padding: 3% 0; background: none; height: auto; color: #fff; text-decoration: none; border-bottom: 1px solid #323232; background: #424242; }
+#header .nav-media ul li a span		{ margin: 0 5px; display: block; }
+#header .nav-media ul li a:hover	{ width: 128px; background: #5f5f5f; }
+#header .nav-media ul li.current 	{ background: #58c6cd; }
+#header .nav-media ul li.current a:hover 	{ background: #58c6cd; }
+
+#header .nav-media ul li.nav-photos a span 			{ background: url(../images/navigation/photos.png) no-repeat top right; text-indent: -999em; }
+#header .nav-media ul li.nav-videos a span 			{ background: url(../images/navigation/videos.png) no-repeat top right; text-indent: -999em; }
+#header .nav-media ul li.nav-discography a span 	{ background: url(../images/navigation/discography.png) no-repeat top right; text-indent: -999em; }
+#header .nav-media ul li.nav-downloads a span 		{ background: url(../images/navigation/downloads.png) no-repeat top right; text-indent: -999em; }
+#header .nav-media ul li.nav-soundcloud a span 		{ background: url(/assets/soundcloud.png) no-repeat top right; text-indent: -999em; }
+#header .nav-media ul li.nav-tracks a span 		{ background: url(/assets/tracks.png) no-repeat top right; text-indent: -999em; }
+#header .nav-media ul li.nav-sets a span 		{ background: url(/assets/sets.png) no-repeat top right; text-indent: -999em; }
+#header .nav-media ul li.nav-demos a span 		{ background: url(/assets/unreleased.png) no-repeat top right; text-indent: -999em; }
+#header .nav-media ul li.nav-logout a span 		{ background: url(/assets/sign-out.png) no-repeat top right; text-indent: -999em; }
+
+
+
+#header .nav-media ul li.active a							{ background: #58c6cd; }
+#header .nav-media.active ul a								{ width: 128px; }
+#header .nav-media ul li.nav-photos.active a span 			{ background: url(../images/navigation/photos.png) no-repeat bottom right; text-indent: -999em; }
+#header .nav-media ul li.nav-videos.activet a span 			{ background: url(../images/navigation/videos.png) no-repeat bottom right; text-indent: -999em; }
+#header .nav-media ul li.nav-discography.active a span 		{ background: url(../images/navigation/discography.png) no-repeat bottom right; text-indent: -999em; }
+#header .nav-media ul li.nav-downloads.active a span 		{ background: url(../images/navigation/downloads.png) no-repeat bottom right; text-indent: -999em; }
+#header .nav-media ul li.nav-soundcloud.active a span 		{ background: url(/assets/soundcloud.png) no-repeat bottom right; text-indent: -999em; }
+#header .nav-media ul li.nav-tracks.active a span 		{ background: url(/assets/tracks.png) no-repeat bottom right; text-indent: -999em; }
+#header .nav-media ul li.nav-sets.active a span 		{ background: url(/assets/sets.png) no-repeat bottom right; text-indent: -999em; }
+#header .nav-media ul li.nav-demos.active a span 		{ background: url(/assets/unreleased.png) no-repeat bottom right; text-indent: -999em; }
+#header .nav-media ul li.nav-logout.active a span 		{ background: url(/assets/sign-out.png) no-repeat bottom right; text-indent: -999em; }
+
+
+
+
+/* ~~~~~~~~~ CONTENT SECTION ~~~~~~~~~ */
+#content					{ clear: both; padding: 9px 0; overflow: hidden; width: 100%; z-index: 1; }
+
+/* ~~~~~~~~~ COLUMN LAYOUT ~~~~~~~~~ */
+/* homepage */
+.layout-a .col-a			{ float: left; width: 554px; }
+.layout-a .col-b			{ float: right; width: 366px; }
+.layout-a .col-aa			{ float: left; width: 178px; }
+.layout-a .col-ab			{ float: right; width: 366px; }
+.layout-a .col-aba			{ float: left; width: 178px; }
+.layout-a .col-abb			{ float: right; width: 178px; }
+.layout-a .col-ba			{ float: left; width: 178px; }
+.layout-a .col-bb			{ float: right; width: 178px; }
+
+/* three col layout */
+.layout-b .col-a			{ float: left; width: 178px; margin: 0 10px 0 0; }
+.layout-b .col-b			{ float: left; width: 554px; }
+.layout-b .col-ba			{ float: left; width: 272px; }
+.layout-b .col-bb			{ float: right; width: 272px; }
+.layout-b .col-c			{ float: right; width: 178px; }
+
+/* five col layout (used on downloads) */
+.layout-c .col-a			{ float: left; width: 178px; margin: 0 10px 0 0; }
+.layout-c .col-b			{ float: left; width: 554px; }
+.layout-c .col-ba			{ float: left; width: 178px; }
+.layout-c .col-bb			{ float: left; width: 178px; margin: 0 0 0 10px; }
+.layout-c .col-c			{ float: right; width: 178px; }
+
+.layout-c .col-baa			{ float: left; width: 366px; }
+.layout-c .col-bab			{ float: right; width: 178px; }
+
+/* four col layout (used on videos and photos) */
+.layout-d .col-a			{ float: left; width: 178px; margin: 0 10px 0 0; }
+.layout-d .col-b			{ float: left; width: 366px; }
+.layout-d .col-c			{ float: left; width: 178px; margin: 0 10px; }
+.layout-d .col-d			{ float: right; width: 178px; }
+
+/* three col layout (used on media) */
+.layout-e .col-a			{ float: left; width: 178px; margin: 0 10px 0 0; }
+.layout-e .col-b			{ float: left; width: 554px; }
+.layout-e .col-ba			{ float: left; width: 366px; }
+.layout-e .col-bb			{ float: right; width: 178px; }
+.layout-e .col-c			{ float: right; width: 178px; }
+
+/* ~~~~~~~~~ RIGHT HOVERING SOCIAL ICONS ~~~~~~~~~ */
+.main-share-container		{ position: absolute; left: -5px; top: 190px; background: #1f1f1e; -webkit-border-radius: 0 24px 0 0; -moz-border-radius: 0 24px 0 0; border-radius: 0 24px 0 0; padding: 15px 7px; text-indent: -999em;  }
+.main-share-container a	{ background-image: url(/assets/icons-social.png); background-repeat: no-repeat; width: 33px; height: 33px; display: block; outline: none; }
+.main-share-container ul	{ list-style: none; margin: 0; }
+.main-share-container li	{ margin: 0 0 5px; }
+.main-share-container li:last-child	{ margin: 0; }
+.facebook a					{ background-position: 0 0; }
+.youtube a					{ background-position: 0 -33px; }
+.myspace a					{ background-position: 0 -66px; }
+.twitter a					{ background-position: 0 -99px; }
+.soundcloud a				{ background-position: 0 -132px; }
+
+/* ~~~~~~~~~ SHARE OVERLAY ~~~~~~~~~ */
+.share-overlay				{ background: url(../images/layout/share-overlay.png); position: absolute; left: 0; top: 0; min-height: 100%; width: 100%; z-index: 999999; display:none; }
+.share-overlay-container	{ background: #2e2e2e; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; width: 300px; height: 140px; position: absolute; left: 50%; z-index: 99999; margin: 0 0 0 -150px; padding: 26px 12px 14px 12px; z-index: 9999991; }
+.share-overlay-container h2	{ color: #fff; font-size: 1.6em; margin: 0 0 30px; }
+.share-overlay-container ul	{ margin: 0; list-style: none; overflow: hidden; }
+.share-overlay-container ul li	{ float: left; width: 49%; margin: 0 0 2px }
+.share-overlay-container ul a	{ color: #fff; font-weight: bold; text-decoration: none; background-image: url(../images/actions/share-overlay-icons.png); background-repeat: no-repeat; display: block; padding: 4px 0 4px 28px }
+
+.share-overlay-container ul .favourites a 	{ background-position: 0 0; }
+.share-overlay-container ul .facebook a 	{ background-position: 0 -20px; }
+.share-overlay-container ul .twitter a 		{ background-position: 0 -40px; }
+.share-overlay-container ul .delicious a 	{ background-position: 0 -60px; }
+.share-overlay-container ul .digg a 		{ background-position: 0 -80px; }
+.share-overlay-container ul .live a 		{ background-position: 0 -100px; }
+.share-overlay-container ul .google a 		{ background-position: 0 -120px; }
+.share-overlay-container ul .myspace a 		{ background-position: 0 -140px; }
+.share-overlay-container ul .youtube a 		{ background-position: 0 -160px; }
+.share-overlay-container ul .soundcloud a 	{ background-position: 0 -180px; }
+
+.close-container		{ position: absolute; }
+.close-container a		{ background: url(../images/actions/icons-close.png); background-repeat: no-repeat; text-indent: -999em; width: 33px; height: 33px; display: block; outline: none;  }
+.close-tr				{ top: 14px; right: 14px; }
+
+/* ~~~~~~~~~ PAGE FOOTER ~~~~~~~~~ */
+
+.footer					{ background: #1f1f1e; -webkit-border-radius: 24px 24px 0 0; -moz-border-radius: 24px 24px 0 0; border-radius: 24px 24px 0 0; margin: 40px 0 0 -24px; overflow: hidden; width: 100%; padding: 20px 0; clear: both; }
+.footer	ul, .footer	p	{ font-size: 1em; margin: 0; }
+.footer	ul				{ float: left; list-style: none; margin: 0 0 0 16px; display: inline; color: #3f3f3f; }
+.footer	p				{ float: right; margin: 20px 16px 0 0; display: inline; color: #656565; }
+.footer	a				{ color: #646464; text-decoration: none; }
+.footer	a:hover			{ color: #fff; }

@@ -1,0 +1,67 @@
+/* ~~~~~~~~~ GENERIC ~~~~~~~~~~ */
+
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+img {
+	vertical-align: bottom;
+}
+img, fieldset {
+	border: 0;
+}
+button {
+  background: #b1b1b1;
+  color: #b1b1b1;
+}
+html {
+	overflow-y: scroll;
+}
+body, select, input, textarea {
+	font: 0.625em/1.2 helvetica, arial, verdana, sans-serif;
+}
+body {
+	 background: #d4d4d4;
+	 color: #333;
+}
+html	{ height: 100%; width: 100%; }
+body	{ min-height: 100%; position: relative; }
+
+/* ~~~~~~~~~ headings ~~~~~~~~~~ */
+
+h1,h2,h3,h4,h5,h6 { font-weight: bold; font-family: helvetica, arial, verdana, sans-serif; }
+
+/* ~~~~~~~~~ lists ~~~~~~~~~~ */
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+/* ~~~~~~~~~ text elements ~~~~~~~~~~ */
+
+p, ul, 
+ol, dl		{ font-size: 1.2em; font-weight: bold; line-height: 1; color: #999; margin: 0 0 1.5em; }
+li			{ margin: 0 0 1px; }
+ul ul		{ font-size: 1em; }
+p			{ line-height: 1.1; }
+.rnd-box-p-last-child	{ margin: 0; }
+
+blockquote  { }
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+
+abbr,
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin: 0 0 1.5em; font-style: italic; }
+del         { }
+
+pre         { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+/* ~~~~~~~~~ forms ~~~~~~~~~~ */
+input, select, textarea		{ font-size: 1.2em; }
+

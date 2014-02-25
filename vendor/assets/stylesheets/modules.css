@@ -1,0 +1,246 @@
+.module-content						{ padding: 15px 11px; display: block; overflow: hidden; }
+.module-content ul 					{ list-style: none; }
+
+/* ~~~~~ latest news (LARGE) ~~~~~ */
+.latest-module						{ background-repeat: no-repeat; position: relative; overflow: hidden; /*min-height: 440px;*/ }
+.news-graphic						{ overflow: hidden; -webkit-border-radius: 24px 24px 0 0; -moz-border-radius: 24px 24px 0 0; border-radius: 24px 24px 0 0; }
+/*.latest-module .rnd-box-content		{ padding: 0 0 45px; }*/
+.latest-module h1					{ background: url(../images/headings/latest.png) no-repeat; width: 161px; height: 47px; text-indent: -999em; margin: 30px 0 0; }
+.latest-module .small-pagination	{ position: absolute; bottom: 12px; right: 12px; padding: 0; }
+.latest-module .read-more-text-link	{ position: absolute; bottom: 12px; left: 12px; }
+.latest-module .read-more-text-link	 a	{ font-size: 1.2em; color: #fff; text-decoration: none; font-weight: bold; }
+.latest-module .read-more-text-link	 a:hover	{ background: #e0e304; color: #000; }
+.link-overlay						{ display: block; position: absolute; top: 0; left: 0; width: 100%; height: 269px; z-index: 1; }
+
+/* ~~~~~ in my box ~~~~~ */
+.in-my-box-module h2				{ background: url(../images/headings/in-my-box.png) no-repeat; width: 77px; height: 98px; text-indent: -999em; margin: 0 0 22px; } 
+.in-my-box-module ul				{ list-style: none; margin: 0; }
+.in-my-box-module li				{ margin: 0 0 1px; }
+.in-my-box-module li:last-child		{ margin: 0; }
+.in-my-box-module li a				{ display: block; -webkit-border-radius: 32px; -moz-border-radius: 32px; border-radius: 32px; background: #000; font-weight: bold; color: #fff; text-decoration: none; padding: 17px 12px;  }
+.in-my-box-module li a:hover		{ background: #000; color: #fff; }
+.in-my-box-module li span			{ background: url(../images/actions/more.png) no-repeat right 0; display: block; padding: 10px 0;  }
+.in-my-box-module li a:hover span	{ background: url(../images/actions/more.png) no-repeat right -33px; }
+
+/* ~~~~~ video ~~~~~ */
+.video-module .rnd-box-content		{ padding: 0; }
+
+/* ~~~~~ sounds cloud ~~~~~ */ 
+.layout-a .soundcloud-module		{ min-height: 440px; }
+.soundcloud-item					{ margin: 0 0 1px; overflow: hidden; width: 100%; }
+.soundcloud-item-media:first-child, .soundcloud-item-media-first-child	{ margin: 10px 0 0; }
+.soundcloud-item:last-child			{ margin: 0; }
+.sound-cloud-control				{ float: left; background: url(../images/actions/soundcloud-buttons.png) no-repeat; width: 69px; height: 68px; margin: 0 1px 0 0; text-indent: -999em; }
+.pause								{ background: url(../images/actions/soundcloud-buttons.png) no-repeat 0 -68px; }
+
+.sc-player .sc-artwork-list, .sc-player .sc-info h4 , .sc-player .sc-info p, .sc-player .sc-info-toggle, .sc-position, .sc-trackslist, .sc-info-close	{ display: none; }
+
+.sc-player-engine-container			{ position: absolute; top: 0; left: -999em; }
+.sc-time-indicators					{ color: #1F1F1E; }
+
+.sc-player							{ overflow: hidden; height: 68px; position: relative; }
+
+.sc-controls						{ float: left; width: 69px; }
+.sc-controls .sc-play				{ display: block; background: url(../images/actions/soundcloud-buttons.png) no-repeat; width: 69px; height: 68px; margin: 0 1px 0 0; text-indent: -999em; outline: none; }
+.sc-controls .sc-play:hover			{ background: url(../images/actions/soundcloud-buttons.png) no-repeat 0 -204px;  }
+.playing .sc-controls .sc-play		{ display: none; }
+
+.playing .sc-controls .sc-pause		{ display: block; background: url(../images/actions/soundcloud-buttons.png) no-repeat 0 -136px; width: 69px; height: 68px; margin: 0 1px 0 0; text-indent: -999em; outline: none;  }
+.playing .sc-controls .sc-pause:hover		{ background: url(../images/actions/soundcloud-buttons.png) no-repeat 0 -68px;  }
+
+.soundcloud-item-media .sc-scrubber		{ width: 445px; }
+
+.sc-scrubber						{ float: left; width: 255px; -webkit-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px; background: #fff; padding: 0 3px; margin: 3px; position:relative; height: 59px; border: 3px solid #57c6cd;  }
+.sc-time-span						{ background: #fff; height: 54px; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; padding: 0 3px; position: relative; margin: 3px 0 0; }
+
+.sc-waveform-container				{ background: #57c6cd; -webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px; }
+.sc-waveform-container img			{ width: 100%; display: block; height: 36px; position: relative; z-index: 3; -webkit-border-radius: 16px 16px 0 0; -moz-border-radius: 16px 16px 0 0; border-radius: 16px 16px 0 0;  }
+.sc-duration						{ color: #333; position: absolute; bottom: 3px; left: 10px; font-size: 1.1em; color: #333; font-weight: bold;  }
+.sc-info h3							{ position: absolute; left: 128px; bottom: 6px; color: #333; border-left: 1px solid #ccc; z-index: 1; padding-left: 5px; font-size: 1.1em; height: 14px; overflow: hidden; }
+.sc-info h3	 a						{ color: #333; }
+
+.sc-played							{ background: #515151; height: 36px; position: relative; z-index: 2; top: -72px; left: 0; width: 0; }
+.sc-buffer							{ background: #329aa3; height: 36px; position: relative; z-index: 1; top: -36px; left: 0; width: 0; }
+/* ~~~~~ photo ~~~~~ */
+.photo-module							{ background-repeat: no-repeat; }
+.photo-module .rnd-box-content			{ padding: 0 0 33px; }
+
+/* ~~~~~ latest release ~~~~~ */
+.latest-release-module					{ background-repeat: no-repeat; }
+.latest-release-module.home				{ height: 335px; }
+.latest-release-module.home	.module-content	{ height: 30px; }
+.latest-release-module.home	.more-footer	{ position: absolute; bottom: 13px; left: 0; width: 100%; }
+.latest-release-module.home	.more-footer a	{ margin: 0 11px; }
+
+/* ~~~~~ tour date ~~~~~ */
+.tour-date-module						{ background-repeat: no-repeat; }
+.tour-date-module .rnd-box-content		{ padding: 0 0 27px; }
+.tour-date-module.home					{ height: 290px; }
+
+/* ~~~~~ more news~~~~~ */
+.news-module							{ background-repeat: no-repeat; }
+
+/* ~~~~~ facebook ~~~~~ */
+.facebook-module h2						{ background: url(../images/headings/facebook.png) no-repeat; width: 118px; height: 65px; text-indent: -999em; margin: 0 0 22px; }
+.facebook-module .rnd-box-small p		{ font-size: 1.4em; color: #000; font-weight: bold; margin: 0 0 1em; }
+.facebook-module .userdetails			{ overflow: hidden; width: 100%; position: relative; }
+.facebook-image							{ float: left; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; background: #333; width: 50px; height: 50px; }
+.facebook-module .userdetails p			{ font-size: 1em; position: absolute; bottom: 0; left: 60px; line-height: 1.2; margin: 0; }
+.facebook-module .userdetails a			{ color: #535353; text-decoration: none; }
+.facebook-module .module-content		{ padding-bottom: 0; }
+.facebook-module .rnd-box-small a		{ color: #4b76fa; }
+.facebook-module .rnd-box-small a:hover	{ color: #000; background: #4b76fa; }
+
+/* ~~~~~ twitter ~~~~~ */
+.twitter-module h2						{ background: url(../images/headings/twitter.png) no-repeat; width: 98px; height: 64px; text-indent: -999em; margin: 0 0 22px; }
+.twitter-module .rnd-box-small p		{ font-size: 1.4em; color: #000; font-weight: bold; margin: 0 0 1em; }
+.twitter-module .rnd-box-small a		{ color: #58c6cc; }
+.twitter-module .rnd-box-small a:hover	{ color: #000; }
+.twitter-module p.userdetails			{ font-size: 1em; margin: 0 0 2em; }
+.twitter-module p.userdetails-last		{ font-size: 1em; margin: 0; }
+.speechbubble							{ background: url(../images/layout/background-speech-tail.png); width: 46px; height: 28px; position: absolute; bottom: 62px; right: 7px; }
+.more-footer-twitter					{ background: url(../images/layout/twitter-sasha.jpg) no-repeat 11px 0; margin: 20px 0 0; }
+.more-footer-twitter a					{ color: #fff; font-size: 1.2em; display: block; background: url(../images/actions/more.png) no-repeat right 0; padding: 9px 40px 9px 0; margin: 0 11px 15px; text-decoration: none; font-weight: bold; text-align: right; }
+.more-footer-twitter a:hover			{ background: url(../images/actions/more.png) no-repeat right -33px; }
+
+/* ~~~~~ h1 heading module ~~~~~ */
+.heading-module					{ min-height: 67px; overflow: hidden; width: 100%; }
+.heading-module	h1				{ padding: 18px 11px; }
+.heading-module ul				{ margin: 0 0 11px 11px; list-style: none; }
+.heading-module ul a			{ color: #fff; text-decoration: none; }
+.heading-module ul a:hover		{ text-decoration: underline; }
+
+/* ~~~~~ more heading module ~~~~~ */
+.more-heading-module h2			{ padding: 24px 11px; }
+
+/* ~~~~~ downloads ~~~~~ */
+.downloads-module 				{ background-repeat: no-repeat; position: relative; overflow: hidden; }
+.downloads-module .more-footer 	{ position: absolute; bottom: 0; right: 0; }
+
+/* ~~~~~ side navigation ~~~~~ */
+/* top level */
+.nav-module						{ padding: 0 0 30px; }
+.nav-module ul					{ margin: 0; font-size: 1.6em; list-style: none; }
+.nav-module li					{ border-bottom: 1px solid #2e2e2d; margin: 0; width: 100%; }
+.nav-module-li-first-child-a { -webkit-border-radius: 24px 24px 0 0; -moz-border-radius: 24px 24px 0 0; border-radius: 24px 24px 0 0; }
+.nav-module a 					{ display: block; padding: 17px 40px 17px 10px; background-image: url(../images/layout/nav-arrow-right.png); background-repeat: no-repeat; background-position:  150px center; color: #fff; text-decoration: none; }
+.nav-module .nav-module-li-last-child		{ border: 0 none; }
+
+.nav-module span				{ display: block; padding: 17px 40px 17px 10px; background-image: url(../images/layout/nav-arrow-down.png); background-repeat: no-repeat; background-position:  150px center; color: #fff; text-decoration: none; }
+
+.nav-module li.current a 		{ background-image: url(../images/layout/nav-arrow-down.gif); }
+/* second level */
+.nav-module ul ul				{ font-size: 0.75em; }
+.nav-module li li				{ background-color: #000; }
+.nav-module li li a				{ padding: 10px 40px 10px 10px; }
+.nav-module li.current li a 	{ background-image: url(../images/layout/nav-arrow-right.png); }
+.nav-module li li.current a		{ background-color: #4c4c4c; }
+/* hover styles */
+.nav-turquoise a:hover, .nav-turquoise li li.current a:hover	{ background-color: #58c6cc; color: #000; }
+.nav-yellow a:hover, .nav-yellow li li.current a:hover			{ background-color: #e0e304; color: #000; }
+
+/* ~~~~~ discography ~~~~~ */
+.discography-module .image-container	{ width: 178px; height: 178px; -webkit-border-radius: 22px 0 22px 0; -moz-border-radius: 22px 0 22px 0; border-radius: 22px 0 22px 0; float: left; position: relative; z-index: 999; left: -10px; }
+.discography-module .item				{ float: right; width: 335px; margin: 0 11px 0 0; }
+.discography-module .item h3 + ul		{ font-size: 1.4em; }
+.discography-module .item h4 + ul		{ margin: 11px 0 0; }
+.discography-module .item h4 + ul li	{ overflow: hidden; width: 100%; line-height: 1.4; }
+.discography-module .item h4 + ul span	{ float: left; width: 100px; }
+.discography-module p					{ padding: 22px 0 11px; clear: both; display: inline-block; }
+
+.discography-module.media				{ padding: 0 0 16px; }
+.discography-module.media .small-pagination { padding-bottom: 0; }
+.discography-module.media p				{ padding: 0; margin: 0 0 1.5em; }
+.discography-module.media p:last-child	{ margin: 0; }
+
+.discography-module ol					{ list-style: none; margin: 30px 0 10px; }
+.discography-module ol li				{ overflow: hidden; width: 100%; margin: 0 0 11px; }
+.discography-module ol li:last-child	{ margin: 0; }
+.discography-module .track-number		{ background: #58c6cd; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; float: left; text-align: center; width: 20px; height: 20px; line-height: 20px;  font-size:0.917em; color: #000; }
+.discography-module .track-title		{ float: left; margin: 5px 0 0 11px; width: 460px; }
+.discography-module .track-title span	{ font-style: italic; font-weight: normal; }
+.discography-module .track-length		{ float: right; margin: 0 5px 0 0; }
+
+/* ~~~~~ video and image modules ~~~~~ */
+.videoimage-thumbnails					{ overflow: hidden; width: 100%; list-style: none; margin: 1px 0 0; }
+.videoimage-thumbnails li				{ float: left; margin: 0 1px 1px 0; }
+.videoimage-thumbnails li img			{ width: 110px; }
+.videoimage-thumbnails li:last-child, .videoimage-thumbnails-li-last-child	{ margin: 0 0 1px 0; }
+.videoimage-container					{ position: relative; }
+
+/* ~~~~~ pagination (used on videos and images pages) ~~~~~ */
+.standard-pagination ul					{ overflow: hidden; width: 100%; list-style: none; margin: 11px 0 0; padding: 0 0 15px; }
+.standard-pagination a	,.standard-pagination span				{ display: block; color: #fff;  text-decoration: none; }
+.standard-pagination .previous			{ float: left; margin: 0 0 0 11px; display: inline; }
+.standard-pagination .previous a, .standard-pagination .previous span		{ background-image: url(../images/actions/more.png); background-repeat: no-repeat; background-position: 0 -165px;  padding: 12px 0 8px 40px; }
+.standard-pagination .page-number		{ text-align: center; padding: 10px 0 0; }
+.standard-pagination .next				{ float: right; margin: 0 12px 0 0; display: inline; }
+.standard-pagination .next a, .standard-pagination .next span			{ background-image: url(../images/actions/more.png); background-repeat: no-repeat; background-position: right 0;  padding: 12px 40px 8px 0; }
+
+/* hovers*/
+.standard-pagination .next a:hover				{ background-position: right -33px; }
+.standard-pagination .previous a:hover			{ background-position: left -264px; }
+.standard-pagination .blue .next a:hover		{ background-position: right -99px; }
+.standard-pagination .blue .previous a:hover	{ background-position: left -297px; }
+
+/* with top border (used on soundcloud page) */
+.soundcloud-module .standard-pagination			{ padding: 0 0 0 0; margin: 0 11px; }
+.soundcloud-module .standard-pagination ul		{ border-top: 1px solid #303030; margin: 0; padding: 11px 0 15px;  }
+.soundcloud-module .standard-pagination .previous, .soundcloud-module .standard-pagination .next 
+												{ margin: 0; }
+
+/* first and last states */
+.standard-pagination .previous span, .standard-pagination .previous span:hover	{ background-position: left -198px; color: #414141; }
+.standard-pagination .next span, .standard-pagination .next span:hover	{ background-position: right -231px; color: #414141; }
+
+/* ~~~~~ filter module ~~~~~ */
+.filter-module							{ overflow: hidden; width: 100%; background: #000;}
+.filter-module-content					{ padding: 15px 10px; overflow: hidden; }
+.filter-module label					{ float: left; color: #fff; font-size: 1.2em; font-weight: bold; color: #999; margin: 3px 0 0; }
+.filter-fields							{ float: right; }
+
+/* ~~~~~ media ~~~~~ */
+.latest-media-photo-module .latest-photo-slider			{ margin: 20px 0 0; }
+.latest-media-photo-module								{ padding-bottom: 24px; }
+.latest-media-photo-module .more-footer a				{ position: absolute; bottom: 0; right: 0; }
+.latest-media-photo-module .carousel-gradient			{ position: absolute; bottom: 24px; left: 0; background: url(../images/gradient_strip.png) repeat-x;  width: 100%; height: 27px; }
+
+/* ~~~~~ tour ~~~~~ */
+.tour-map-module						{ background-image: url(../images/graphic-tour-map.gif); background-repeat: no-repeat; width: 555px; height: 302px; padding: 0 0 50px; position: relative; }
+.tour-map-module .marker				{ background: url(../images/actions/tour-marker.png) no-repeat; position: absolute; width: 48px; height: 48px; }
+.tour-map-module .location				{ background: url(../images/bg-tour-speech-bubble.png) no-repeat; width: 152px; height: 92px; position: absolute; padding: 42px 30px 0; }
+
+.tour-map-module .bubble-up-large		{ padding: 20px 28px 0; height: 115px; }
+.tour-map-module .bubble-down-large		{ padding: 35px 28px 0; height: 101px; }
+.tour-map-module .bubble-up-small		{ padding: 23px 28px 0; height: 94px; }
+.tour-map-module .bubble-down-small		{ padding: 40px 28px 0; height: 77px; }
+
+.tour-map-module .location a			{ color: #4b76fa; text-decoration: none; }
+.tour-map-module .location a:hover		{ background: #4b76fa; color: #fff; }
+.tour-map-module .small-pagination		{ padding-top: 285px; }
+
+.location .links ul						{ list-style: none; width: 100%; overflow: hidden; position: absolute; bottom: 22px; left: 28px; }
+.bubble-down-large .links  ul			{ bottom : 20px; }
+.bubble-down-large .links  ul			{ bottom: 5px; }
+.location .links li						{ float: left;  }
+.location .links li.last				{ background: url(../images/layout/bubble-divider.gif) left 3px no-repeat; padding: 0 0 0 7px; margin: 0 0 0 5px; }
+
+
+/* ~~~~~ tour ~~~~~ */
+a .shop-module .module-content			{ height: 220px; }
+
+/* ~~~~~ news ~~~~~ */
+.news-landing-container 		{ width: 555px; position: relative; overflow: hidden; }
+.news-scroll-inner				{ width: 2352px; position: relative; overflow: hidden; }
+
+/* ~~~~~ newsletter ~~~~~ */
+.newsletter-module						{ padding: 20px 10px 10px; }
+.newsletter-module label				{ display: none; }
+/*.newsletter-module .text-input			{  color: #555; width: 146px; margin: 0 0 5px; outline: none; padding: 1px 5px;  }*/
+.newsletter-module .text-input			{ background: url(../images/email-signup.png) no-repeat; border: 0 none; color: #fff; padding: 2px 10px 0 10px; width: 137px; margin: 0 0 3px; outline: none; height: 27px; }
+.more-input			{ color: #fff; font-size: 1.2em; display: block; background: url(../images/actions/more.png) no-repeat right 0; padding: 8px 0; margin: 0 0 0 -2px; text-decoration: none; font-weight: bold; border: 0 none; width: 160px; text-align: left; outline: none; cursor: pointer; height: 33px; }
+.more-input:hover						{ background: url(../images/actions/more.png) no-repeat right -66px; }
+.newsletter-module select				{ width: 158px; margin: 5px 0 5px; display: block; color: #555;  }
+/*.newsletter-module select				{ width: 137px; background: #515151; color: #fff; border: none 0; display: block; margin: 0;  }
+.rounded-input							{ background: url(../images/email-signup.png) no-repeat; border: 0 none; color: #fff; padding: 7px 10px; width: 137px; margin: 0 0 7px; outline: none; }*/
+#status { color: #fff; }

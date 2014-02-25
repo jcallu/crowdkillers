@@ -1,5 +1,4 @@
 doctype html
-== "<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->"
 == "<!--[if lt IE 7 ]> <html class=\"ie6\" lang=\"en\"> <![endif]-->"
 == "<!--[if IE 7 ]>    <html class=\"ie7\" lang=\"en\"> <![endif]-->"
 == "<!--[if IE 8 ]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->"
@@ -30,49 +29,51 @@ head
   = csrf_meta_tag
 
 body
-  nav.top-bar.container
-    ul.title-area
-      li.name
-        h1
-          a href="/" = yield :title
-      li.toggle-topbar.menu-icon
-        a href="#"
-          span Menu
-    section.top-bar-section
-      ul.left
-        li.divider
-        li
-          a href="/"
-            .icon.flaticon.stroke.home
-            | Home
-        li.divider
-        li.has-dropdown
-          a href=""
-            .icon.flaticon.stroke.music
-              |  Music
-          ul.dropdown
-            li
-              a href="/tracks" Tracks
-            li
-              a href="/sets" Sets
-            -if authenticated?
-              li
-                a href="/demos" Demos
-        li.divider
-    section.top-bar-section
-      ul.right
-        li.divider
-        li
-          a href="/sessions/new"
-            .icon.flaticon.stroke.login-1
-            | Log In
-    - if authenticated?
-      section.top-bar-section
-        ul.right
-          li
-            = link_to session_path(0), method: :delete do
-              .icon.flaticon.stroke.logout-2
-              | Sign Out
-  .row
-    .large-12.columns
-      == yield
+  #container
+    #content-container
+      #content-inner
+        #header
+          ul#nav
+            div.logo.active
+              a href="/"
+                | Crowdkillers
+            li.nav-media
+              a href="#"
+                span Media
+              .subnav
+                ul
+                  li.nav-soundcloud
+                    a.header-nav-media-ul-li-first-child-a href="https://soundcloud.com/crowdkillers"
+                      span Soundcloud
+                  li.nav-tracks
+                    a.header-nav-media-ul-li-first-child-a href="/tracks"
+                      span Tracks
+                  li.nav-sets
+                    a.header-nav-media-ul-li-first-child-a href="/sets"
+                      span Sets
+                  - if authenticated?
+                    li.nav-demos
+                      a.header-nav-media-ul-li-first-child-a href="/demos"
+                        span Unreleased
+                  - if authenticated?
+                    li.nav-logout
+                      = link_to session_path(0), method: :delete do
+                        span Logout
+                  - else
+                    li.nav-demos
+                      a.header-nav-media-ul-li-first-child-a href="/sessions/new"
+                        span Sign In
+            li.nav-contact
+              a href="/contact"
+                span Contact
+  #content.col-b
+    == yield
+  div.main-share-container
+    ul
+      li.facebook
+        a href="https://www.facebook.com/Crowdkillers" target="_blank" Facebook
+      li.twitter
+        a href="https://twitter.com/crowdkillers" target="_blank" Twitter
+      li.soundcloud
+        a href="https://soundcloud.com/crowdkillers" Soundcloud
+

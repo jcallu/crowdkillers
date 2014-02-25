@@ -1,0 +1,162 @@
+/* ~~~~~~~~~~ ROUNDED CORNERS ~~~~~~~~~ */
+.rnd-box {  -webkit-border-radius: 24px 24px 24px 0; -moz-border-radius: 24px 24px 24px 0; border-radius: 24px 24px 24px 0; background-color: #1f1f1e; margin: 0 0 10px; clear: both; position: relative; display: block; }
+.rnd-box-small { -webkit-border-radius: 17px; -moz-border-radius: 17px; border-radius: 17px; background: #fff; padding: 17px 11px; margin: 0 -4px; position: relative; z-index: 9; }
+
+/* ~~~~~~~~~~ HEADING STYLES ~~~~~~~~~ */
+
+/* main coloured headings */
+.hd1		{ color: #000; font-size: 1.6em; overflow: hidden; width: 100%; display: block; }
+.hd1 span,
+.hd1 a		{ height: 16px; float: left; position: relative; padding: 7px 10px 7px; text-decoration: none; }
+
+/* second level white headings */
+.hd2		{ color: #000; font-size: 1.4em; background-color: #fff; padding: 7px 10px 7px; line-height: 0.95; }
+
+.copyright  		{ min-height: 14px; overflow: hidden; background-color: #fff; padding: 9px 10px 7px; line-height: 0.95; color: #000; }
+.copyright .hd12	{ font-size: 1.4em;  float: left; margin: 0; color: #000; font-weight: bold; }
+.copyright span		{ background-image: url(../images/headings/copyright.gif); background-repeat: no-repeat; background-position: right 0; width: 24px; height: 13px; float: right; margin: 0; cursor: pointer;  }
+
+.copyright-dark  		{ min-height: 14px; overflow: hidden; background-color: #000; padding: 9px 10px 7px; line-height: 0.95; color: #fff; display: none; }
+.copyright-dark .hd13	{ font-size: 1.4em;  float: left; }
+.copyright-dark span	{ background-image: url(../images/headings/copyright-dark.gif); background-repeat: no-repeat; background-position: right 0; width: 24px; height: 13px; float: right; margin: 0; cursor: pointer;  }
+
+/* second level heading used in the Facebook panel */
+.hd3		{ font-size: 1.4em; font-weight: bold; color: #fff; margin: 0 0 8px; }
+
+.hd4		{ font-size: 1.6em; color: #fff; }
+.hd5		{ font-size: 1.4em; color: #fff; }
+.hd6		{ font-size: 1.6em; color: #fff; line-height: 1; }
+.hd7		{ font-size: 1.2em; color: #fff; line-height: 1.4; }
+.hd8		{ font-size: 1.2em; color: #999; line-height: 1; margin: 0 0 1.2em; }
+.hd9		{ font-size: 1.4em; color: #000; line-height: 1; }
+.hd10		{ font-size: 1.4em; color: #616161; line-height: 1; margin: 0 0 0.5em; }
+.hd11		{ font-size: 1.2em; color: #fff; margin: 0 0 0.5em; }
+.hd12		{ font-size: 1.4em; font-weight: bold; color: #fff; margin: 10px 0 8px; }
+
+.copyright.hover { visibility: hidden; }
+.soundcloudhd { background: url(../images/headings/soundcloud.png) no-repeat; width: 167px; height: 65px; text-indent: -999em; margin: 0 0 22px; }
+
+/* ~~~~~~~~~~ COLOURED HEADINGS AND LINKS (turquoise by default) ~~~~~~~~~ */
+
+.module-content a, .table-1 a	{ color: #fff; text-decoration: none; }
+/* turquoise (DEFAULT) */
+.hd1 span, .hd1 a, 
+.module-content a:hover { background: #58c6cc; color: #000; } 
+/* yellow */
+.yellow .hd1 span, 
+.yellow .module-content a:hover
+{ background: #e0e304; color: #000; } 
+/* blue */
+.blue .hd1 span,
+.blue .module-content a:hover, .blue .table-1 a:hover	
+{ background: #4b76fa; color: #000; }
+/* green */
+.green .hd1 span,
+.green .module-content a:hover
+{ background: #4bbe71; color: #000; }
+/* purple */
+.purple .hd1 span,
+.purple .module-content a:hover
+{ background: #7070ed; color: #000; }
+
+
+/* ~~~~~~~~~~ PAGINATION ~~~~~~~~~ */
+/*.w-small-pag			{ padding-bottom: 35px; }*/
+/*.small-pagination		{ position: absolute; bottom: 16px; right: 12px; }*/
+.small-pagination		{ padding: 0 12px 12px; overflow: hidden; clear: both; }
+.small-pagination ul	{ float: right; margin: 0; list-style: none; padding: 0; }
+.small-pagination li	{ float: left; }
+
+.small-pagination .yellow span { background-image: url(../images/actions/pagination-yellow.png); background-repeat: no-repeat; background-position: -21px 0;  }
+.small-pagination .turquoise span { background-image: url(../images/actions/pagination-turquoise.png); background-repeat: no-repeat; background-position: -21px 0;  }
+.small-pagination .blue span { background-image: url(../images/actions/pagination-blue.png); background-repeat: no-repeat; background-position: -21px 0;  }
+
+.small-pagination li span	{ display: block; text-indent: -999em; width: 16px; height: 18px; margin-left: 3px; }
+
+.small-pagination li.current span { background-position: 0 0; width: 18px; }
+.small-pagination li.previous span { background-position: -42px 0; width: 17px; }
+.small-pagination li.previous span:hover { background-position: -42px bottom; width: 17px; }
+.small-pagination li.next span { background-position: -64px 0; width: 18px; }
+.small-pagination li.next span:hover { background-position: -64px bottom; width: 18px; }
+
+/* ~~~~~~~~~~ PAGINATION ~~~~~~~~~ */
+.large-pagination ul				{ overflow: hidden; width: 100%; list-style: none; margin: 0; }
+.large-pagination li				{ float: left; padding: 27px 65px 28px 0; }
+.large-pagination li a				{ color: #999; text-decoration: none; }
+.large-pagination li.current a, .large-pagination li a:hover	{ color: #fff; }
+.large-pagination li:first-child	{ padding-left: 11px; }
+.large-pagination li:last-child		{ padding-right: 11px; }
+
+/* ~~~~~~~~~~ MORE FOOTERS (inside content box) ~~~~~~~~~ */
+.more-footer a, .more-footer span			{ color: #fff; font-size: 1.2em; display: block; background: url(../images/actions/more.png) no-repeat right 0; padding: 9px 0; margin: 10px 11px 15px; text-decoration: none; font-weight: bold; }
+
+/* ~~~~~~~~~~ MORE FOOTERS (inside content box text aligned right) ~~~~~~~~~ */
+.more-right a, .more-right span			{ padding-right: 40px; text-align: right }
+
+/* ~~~~~~~~~~ MORE FOOTERS (independant) ~~~~~~~~~ */
+.more-module				{ top: -9px; }
+.more-module a				{ display: block; font-weight: bold; color: #fff; text-decoration: none; padding: 13px 12px; font-size: 1.2em; }
+.more-module span			{ background: url(../images/actions/more.png) no-repeat right 0; display: block; padding: 9px 0;  }
+
+.col-bb .more-module		{ margin: 0; }
+
+/* ~~~~~~~~~~ MORE FOOTERS (no-text) ~~~~~~~~~ */
+.no-text-more					{ position: relative; cursor: pointer; text-decoration: none; }
+/*.no-text-more .rnd-box			{ padding: 0 0 40px; }*/
+.no-text-more .more-footer		{ /*position: absolute; bottom: 0; left: 0;*/ width: 100%; text-indent: -999em;  }
+.no-text-more .module-content	{ text-align: center; }
+
+/* ~~~~~~~~~~ MORE FOOTER HOVER COLOURS ~~~~~~~~~ */
+
+/* turquoise (DEFAULT) */
+.more-footer a:hover, .more-footer span:hover	{ background: url(../images/actions/more.png) no-repeat right -33px; }
+.more-module a:hover span						{ background: url(../images/actions/more.png) no-repeat right -33px; }
+a.no-text-more:hover .more-footer span			{ background: url(../images/actions/more.png) no-repeat right -33px; }
+/* yellow */
+.yellow.more-module a:hover span, .yellow .more-footer a:hover	{ background: url(../images/actions/more.png) no-repeat right -66px; }
+a.no-text-more:hover .yellow .more-footer span	{ background: url(../images/actions/more.png) no-repeat right -66px; }
+/* blue */
+.blue.more-module a:hover span, .blue .more-footer a:hover		{ background: url(../images/actions/more.png) no-repeat right -99px; }
+a.no-text-more:hover .blue .more-footer span	{ background: url(../images/actions/more.png) no-repeat right -199px; }
+/* purple */
+.purple.more-module a:hover span, .purple .more-footer a:hover 	{ background: url(../images/actions/more.png) no-repeat right -132px; }
+a.no-text-more:hover .purple .more-footer span	{ background: url(../images/actions/more.png) no-repeat right -132px; }
+
+/* ~~~~~~~~~~ MORE INFO BUTTONS ~~~~~~~~~ */
+.table-1 .more-info a		{ background-image: url(../images/actions/more-info.png); background-position: no-repeat; background-color: #1F1F1E; width: 142px; height: 36px; display: block; text-indent: -999em; }
+.table-1 .more-info a:hover	{ background-image: url(../images/actions/more-info.png); background-position: no-repeat; background-position: 0 -35px; background-color: #1F1F1E; }
+
+/* ~~~~~~~~~~ SHARE ICONS ~~~~~~~~~ */
+.share-container			{ position: absolute; text-indent: -999em; }
+.share-container a			{ background-image: url(../images/actions/icons-share.png); background-repeat: no-repeat; background-position: 0 -33px; width: 33px; height: 33px; display: block; outline: none; }
+.share-tr					{ top: 11px; right: 10px; }
+.share-br					{ clear: both; position: static; overflow: hidden; padding: 0 16px 11px 0 }
+.share-br a					{ float: right; }
+
+.yellow	.share-container a				{ background-position: 0 0; }
+.turquoise .share-container a			{ background-position: 0 -33px; }
+.blue .share-container a				{ background-position: 0 -66px; }
+.green .share-container a				{ background-position: 0 -99px; }
+
+/* ~~~~~~~~~~ SOCIAL SHARE ICONS ~~~~~~~~~ */
+.social-share-container		{ position: absolute; text-indent: -999em; }
+.social-share-container a	{ background-image: url(../images/actions/icons-social.png); background-repeat: no-repeat; width: 33px; height: 33px; display: block; outline: none; }
+.share-tr					{ top: 11px; right: 10px; }
+
+a.facebook					{ background-position: 0 0; }
+a.youtube					{ background-position: 0 -33px; }
+a.myspace					{ background-position: 0 -66px; }
+a.twitter					{ background-position: 0 -99px; }
+a.soundcloud				{ background-position: 0 -132px; }
+
+/* ~~~~~~~~~~ TABLE (used on tour page) ~~~~~~~~~ */
+.table-1 					{ width: 100%; position: relative; z-index: 999; }
+.table-1 th.hd-more-info	{ width: 142px; }
+.table-1 th 				{ font-size: 1.4em; color: #fff; font-weight: bold; text-align: left; padding: 15px 10px; border-bottom: 1px solid #2e2e2e; }
+.table-1 td 				{ font-size: 1.2em; color: #999; font-weight: bold; text-align: left; padding: 15px 10px; border-bottom: 1px solid #2e2e2e; line-height: 1.2; }
+.table-1 td strong 			{ color: #fff; }
+.table-1 .table-1-tr-last-child-td	{ border: 0 none; }
+.td-date					{ white-space: nowrap; }
+
+
+.more-footer:after, .more-footer-twitter:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }

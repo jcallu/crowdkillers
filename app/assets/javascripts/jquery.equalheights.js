@@ -1,0 +1,12 @@
+(function($){ 
+	$.equalHeight = function(group) {
+		tallest = 0;
+		group.each(function() {
+			thisHeight = $(this).height();
+			if(thisHeight > tallest) {
+				tallest = thisHeight;
+			}
+		});
+		group.height(tallest);
+	};
+})(jQuery);

@@ -1,0 +1,40 @@
+body
+  div#container
+    div#content-container
+      div#content-inner
+        div#header
+          ul#nav
+            div.logo
+              a href="/"
+                | Crowdkillers
+            li.nav-home.active
+              a href="/"
+                span Home
+            li.nav-tour
+              a href="/tour"
+                span Tour
+            li.nav-news
+              a href="/news"
+                span News
+            li.nav-media
+              a href="/tracks"
+                span Media
+              .subnav
+                ul
+                  li.nav-soundcloud
+                    a.header-nav-media-ul-li-first-child-a href="/tracks"
+                      span Soundcloud
+            li.nav-shop
+              a href="/shop"
+                span Shop
+            li.nav-contact
+              a href="/contact"
+                span Contact
+  div.main-share-container
+    ul
+      li.facebook
+        a href="https://www.facebook.com/Crowdkillers" target="_blank" Facebook
+      li.twitter
+        a href="https://twitter.com/crowdkillers" target="_blank" Twitter
+      li.soundcloud    
+        a href="https://soundcloud.com/crowdkillers" Soundcloud

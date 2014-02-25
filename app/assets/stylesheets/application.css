@@ -11,5 +11,8 @@
  *= require_self
  *= require foundation_and_overrides
  *= require stroke
- *= require_tree .
+ *= require reset
+ *= require layout
+ *= require common
+ *= require modules
  */
