@@ -13,15 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require mootools
-//= require swfobject
-//= require jquery-1.5.min
-//= require jquery.equalheights
-//= soundcloud.player.api
-//= sc-player
-//= global
-//= share
-//= info
-//= more
-//= require_tree .
 
+$(function(){ $(document).foundation(); });
