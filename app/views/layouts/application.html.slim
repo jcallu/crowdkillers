@@ -29,6 +29,7 @@ head
   = csrf_meta_tag
 
 body
+
   #container
     #content-container
       #content-inner
@@ -66,14 +67,14 @@ body
             li.nav-contact
               a href="/contact"
                 span Contact
-  #content.col-b
-    == yield
-  div.main-share-container
-    ul
-      li.facebook
-        a href="https://www.facebook.com/Crowdkillers" target="_blank" Facebook
-      li.twitter
-        a href="https://twitter.com/crowdkillers" target="_blank" Twitter
-      li.soundcloud
-        a href="https://soundcloud.com/crowdkillers" Soundcloud
+    #content.col-a
+      == yield
+div.main-share-container
+  ul
+    li.facebook
+      a href="https://www.facebook.com/Crowdkillers" target="_blank" Facebook
+    li.twitter
+      a href="https://twitter.com/crowdkillers" target="_blank" Twitter
+    li.soundcloud
+      a href="https://soundcloud.com/crowdkillers" Soundcloud
 

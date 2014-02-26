@@ -1,12 +1,19 @@
 - content_for :title do
-  | Unreleased Demos 
+  | Unreleased Demos
 
 - if authenticated?
 
   head
     h1 Demos
   body
-    iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/crowdkillers_private/sets/demos/s-6cQUu&auto_play=true&auto_advance=true&buying=true&liking=true&download=true&sharing=true&show_artwork=true&show_comments=true&show_playcount=true&show_user=true&hide_related=false&visual=true&start_track=0&callback=true&single_active=true&show_bpm=true" width="100%" height="600" scrolling="yes" frameborder="yes"
+    div style="position:relative;width:100%"
+      img(src='/assets/metro.png')
+    div style="position:absolute;left:10%;top:30%;font-size: 32px"
+      iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/crowdkillers_private/sets/demos/s-6cQUu&auto_play=true&auto_advance=true&buying=true&liking=true&download=true&sharing=true&show_artwork=true&show_comments=true&show_playcount=true&show_user=true&hide_related=false&visual=true&start_track=0&callback=true&single_active=true&show_bpm=true" width="400" height="600" scrolling="yes" frameborder="yes"
 
 - else
-  p You Are Not A Crowdkiller, GTFO!!! :)
+  br
+  br
+  br
+  div style="position:absolute;left:10px;top:100%;font-size: 32px"
+    p Sorry, You Are Not A Crowdkiller!!! :)
