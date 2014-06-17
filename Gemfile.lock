@@ -63,6 +63,7 @@ GEM
     multi_json (1.7.6)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    newrelic_rpm (3.8.1.221)
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -129,6 +130,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  newrelic_rpm
   pry
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

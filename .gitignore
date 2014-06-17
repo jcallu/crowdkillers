@@ -23,3 +23,4 @@ data_clone.dump
 zeus.json
 .ruby-gemset
 db/.pgpass
+config/app_env.txt
